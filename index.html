@@ -1,17 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <title>Guess two cards</title>
+    <title>mos kartalar</title>
 </head>
+
 <body>
-<p id="score__now" class="score__now"></p>
+    <p id="score__now" class="score__now"></p>
     <section class="memory-game">
         <div class="memory-card" data-framework="first">
             <img src="img/sushione.png" alt="first" class="front-face">
@@ -66,16 +68,25 @@
         <div class="popup__body">
             <div class="popup__content">
                 <img src="img/whowant.png" alt="" class="start_image" width="100%">
-                <div class="popup__title">You need to choice all paired pictures</div>
+                <div class="popup__title">Bir hil turdagi rasmlarni topish</div>
                 <div class="popup__text">
-                    <p>We will give you real discount for your game achievements. Just try to collect all the cards in less steps.</p>
+                    <p>Salom jo'rala na gap o'sing)))</p>
                     <ul class="discounts">
-                        <li class="discount"><p>In 6 steps: -20%<button type="button" class="level__hard" disabled>HARD</button></p></li>
-                        <li class="discount"><p>6-10 steps: -15%<button type="button" class="level__medium" disabled>MEDIUM</button></p></li>
-                        <li class="discount"><p>10-20 steps: -10%<button type="button" class="level__easy" disabled>EASY</button></p></li>
+                        <li class="discount">
+                            <p>6 ta urinish: -20%<button type="button" class="level__hard" disabled>Qiyin</button></p>
+                        </li>
+                        <li class="discount">
+                            <p>6-10 ta urinish: -15%<button type="button" class="level__medium" disabled>O'rta</button>
+                            </p>
+                        </li>
+                        <li class="discount">
+                            <p>10-20 ta urinish: -10%<button type="button" class="level__easy" disabled>Oson</button>
+                            </p>
+                        </li>
                     </ul>
                 </div>
-                <button class="play_button"><a href="#" class="popup__start" id="start">PLAY<i class="fas fa-play play"></i></a></button>
+                <button class="play_button"><a href="#" class="popup__start" id="start">Boshlanglaqani<i
+                            class="fas fa-play play"></i></a></button>
             </div>
         </div>
     </div>
@@ -83,15 +94,17 @@
         <div class="popup__body">
             <div class="popup__content">
                 <img src="img/logorock.jpg" alt="" class="start_image" width="100%">
-                <div class="popup__title">WIN! WIN! WIN! <a href="#" class="popup__restart" id="restart" onClick="window.location.reload()"><i class="fas fa-sync-alt restart"></i></a></div>
-                <div class="popup__text">You can copy the code below and get your discount, or you can play one more time and try to get larger discount. Please do not forget, that you can use it only in the same day.</div>
-                <p class="score" id="score__result">Your score is 12</p>
-                <p class="prize" id="prize">You have 20% sale</p>
-                <p class="benefit__text">Here is your code</p>
+                <div class="popup__title">Oydin ahi))! <a href="#" class="popup__restart" id="restart"
+                        onClick="window.location.reload()"><i class="fas fa-sync-alt restart"></i></a></div>
+                <div class="popup__text">sizda hali imkoniyatlar mavjud o'yinni tark etmang</div>
+                <p class="score" id="score__result">hisobingiz 12</p>
+                <p class="prize" id="prize">sizda 20% skidka bor</p>
+                <p class="benefit__text">qodingizni kiriting</p>
                 <p class="benefit" id="benefit">4556457AD123</p>
             </div>
         </div>
     </div>
-<script src="https://kit.fontawesome.com/8eb688fe6b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8eb688fe6b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
