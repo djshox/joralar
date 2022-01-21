@@ -9,9 +9,9 @@ const bot = new TelegramBot(TOKEN, {
 const port = process.env.PORT || 5000;
 const gameName = "joralar";
 const queries = {};
-server.use(express.static(path.join(__dirname, 'TELEGRAM_GEME_FRONT')));
+server.use(express.static(path.join(__dirname, 'TELEGRAM_GAME_FRONT')));
 bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "Created By ZIYOO"));
-bot.onText(/start|game/, (msg) => bot.sendGame(msg.from.id, gameName));
+bot.onText(/start|game/, (msg) => bot.sendGame(msg.from.içd, gameName));
 bot.on("callback_query", function (query) {
     if (query.game_short_name !== gameName) {
         bot.answerCallbackQuery(query.id, "Kechirasiz, '" + query.game_short_name + "' Server o'chirilgan");
