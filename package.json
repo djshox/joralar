@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/djshox/jorala.git"
+    "url": "git+https://djshox.github.io/joralar/"
   },
   "author": "Khasanoff",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/djshox/jorala/bugs"
+    "url": "https://djshox.github.io/joralar/bugs"
   },
-  "homepage": "https://github.com/djshox/jorala#readme",
+  "homepage": "https://djshox.github.io/joralar#readme",
   "dependencies": {
     "express": "^4.17.2",
     "node-telegram-bot-api": "^0.56.0",

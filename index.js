@@ -17,7 +17,7 @@ bot.on("callback_query", function (query) {
         bot.answerCallbackQuery(query.id, "Kechirasiz, '" + query.game_short_name + "' Server o'chirilgan");
     } else {
         queries[query.id] = query;
-        let gameurl = "https://djshox.github.io/jorala";
+        let gameurl = "https://djshox.github.io/joralar/";
         bot.answerCallbackQuery({
             callback_query_id: query.id,
             url: gameurl
