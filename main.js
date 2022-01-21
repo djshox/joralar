@@ -24,13 +24,15 @@ function flipCard() {
     document.getElementById("score__result").innerHTML = "Urinishlar soni:" + " " + Math.floor(scoreCount / 2) + "ta";
     if (scoreCount / 2 <= 6) {
         document.getElementById("prize").innerHTML = "sizga 20% skidka";
-        document.getElementById("benefit").innerHTML = randomOne() + "20" + randomString + codeDate;
+        // document.getElementById("benefit").innerHTML = randomOne() + "20" + randomString + codeDate;
+        document.getElementById("benefit").innerHTML = '(33)803-18-99';
     } else if (scoreCount / 2 > 6 && scoreCount / 2 <= 10) {
         document.getElementById("prize").innerHTML = "sizga 15% skidka";
-        document.getElementById("benefit").innerHTML = randomOne() + "15" + randomString + codeDate;
+        // document.getElementById("benefit").innerHTML = randomOne() + "15" + randomString + codeDate;
     } else {
         document.getElementById("prize").innerHTML = "sizga 15% skidka";
-        document.getElementById("benefit").innerHTML = randomOne() + "15" + randomString + codeDate;
+        // document.getElementById("benefit").innerHTML = randomOne() + "15" + randomString + codeDate;
+        document.getElementById("benefit").innerHTML = '(33)803-18-99';
     }
     if (lockBoard) return;
     if (this === firstCard) return;
