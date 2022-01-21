@@ -10,11 +10,11 @@ const port = process.env.PORT || 5000;
 const gameName = "jorala";
 const queries = {};
 server.use(express.static(path.join(__dirname, 'TELEGRAM_GEME_FRONT')));
-bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "This bot implements a T-Rex jumping game. Say /game if you want to play."));
+bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "Created By ZIYOO"));
 bot.onText(/start|game/, (msg) => bot.sendGame(msg.from.id, gameName));
 bot.on("callback_query", function (query) {
     if (query.game_short_name !== gameName) {
-        bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
+        bot.answerCallbackQuery(query.id, "Kechirasiz, '" + query.game_short_name + "' Server o'chirilgan");
     } else {
         queries[query.id] = query;
         let gameurl = "https://djshox.github.io/jorala";
