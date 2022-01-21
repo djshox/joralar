@@ -1,13 +1,13 @@
 const express = require("express");
 const path = require("path");
 const TelegramBot = require("node-telegram-bot-api");
-const TOKEN = "5210657879:AAEJxJT2rjxiBAnTWy5G_cv0eKF7xj58qso";
+const TOKEN = "5290366398:AAFy2_T_IBTBxOYaNttKXGeGy1C_Uk-qn-w";
 const server = express();
 const bot = new TelegramBot(TOKEN, {
     polling: true
 });
 const port = process.env.PORT || 5000;
-const gameName = "jorala";
+const gameName = "joralar";
 const queries = {};
 server.use(express.static(path.join(__dirname, 'TELEGRAM_GEME_FRONT')));
 bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "Created By ZIYOO"));
