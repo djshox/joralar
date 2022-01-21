@@ -1,17 +1,17 @@
 const express = require("express");
 const path = require("path");
 const TelegramBot = require("node-telegram-bot-api");
-const TOKEN = "5290366398:AAFy2_T_IBTBxOYaNttKXGeGy1C_Uk-qn-w";
+const TOKEN = "5210657879:AAEJxJT2rjxiBAnTWy5G_cv0eKF7xj58qso";
 const server = express();
 const bot = new TelegramBot(TOKEN, {
     polling: true
 });
 const port = process.env.PORT || 5000;
-const gameName = "joralar";
+const gameName = "jorala";
 const queries = {};
 server.use(express.static(path.join(__dirname, 'TELEGRAM_GAME_FRONT')));
 bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "Created By ZIYOO"));
-bot.onText(/start|game/, (msg) => bot.sendGame(msg.from.içd, gameName));
+bot.onText(/start|game/, (msg) => bot.sendGame(msg.from.id, gameName));
 bot.on("callback_query", function (query) {
     if (query.game_short_name !== gameName) {
         bot.answerCallbackQuery(query.id, "Kechirasiz, '" + query.game_short_name + "' Server o'chirilgan");
@@ -35,6 +35,7 @@ server.get("/highscore/:score", function (req, res, next) {
     if (!Object.hasOwnProperty.call(queries, req.query.id)) return next();
     let query = queries[req.query.id];
     let options;
+
     if (query.message) {
         options = {
             chat_id: query.message.chat.id,
